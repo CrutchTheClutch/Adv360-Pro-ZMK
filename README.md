@@ -1,4 +1,4 @@
-# Personal Configuration for kinesis adv 360
+# Personal Config for Kinesis Adv 360
 
 This config includes two layouts
 - Qwerty with homerow mods
