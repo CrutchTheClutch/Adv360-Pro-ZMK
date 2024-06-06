@@ -1,5 +1,7 @@
 # Personal Config for Kinesis Adv 360
 
+note: windows / ctrl homerow modifier keys swapped :)
+
 This config includes two layouts
 - Qwerty with homerow mods
 ![qwerty layout](./assets/kinesis360-qwerty.png)
