@@ -225,7 +225,7 @@
     };
     dvorak {
       bindings = <
-        &pgrave    &pkp_n1        &lkp_n2       &lkp_n3       &lkp_n4       &akp_n5       ______                                                    ______                &ekp_n6   &rkp_7      &rkp_n8       &rkp_n9        &skp_n0          &eprcnt
+        &pgrave    &pkp_n1        &lkp_n2       &lkp_n3       &lkp_n4       &akp_n5       ______                                                    ______                &ekp_n6   &rkp_n7     &rkp_n8       &rkp_n9        &skp_n0          &eprcnt
         ______     &kp SEMI       &kp COMMA     &kp DOT       &kp P         &kp Y         ______                                                    ______                &kp F     &kp G       &kp C         &kp R          &kp L            &bhash
         ______     A_CTRL         O_OPT         E_CMD         U_SHFT        &kp I         ______       ______     ______    ______      ______      ______                &kp D     H_SHFT      T_CMD         N_OPT          S_CTRL           &kp MINUS
         ______     &kp SQT        &kp Q         &kp J         &kp K         &kp X                                 ______    ______                                        &kp B     &kp M       &kp W         &kp V          &kp Z            ______
