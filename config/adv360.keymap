@@ -209,7 +209,7 @@
       bindings = <
         xxxxxx     xxxxxx         xxxxxx        xxxxxx        xxxxxx        xxxxxx        &tog KEYPAD                                               &mo MOD               xxxxxx    xxxxxx      xxxxxx        xxxxxx         xxxxxx           xxxxxx
         &kp TAB    xxxxxx         xxxxxx        xxxxxx        xxxxxx        xxxxxx        &to QWERTY                                                &kp PSCRN             xxxxxx    xxxxxx      xxxxxx        xxxxxx         xxxxxx           xxxxxx
-        &kp ESC    xxxxxx         xxxxxx        xxxxxx        xxxxxx        xxxxxx        &to DVORAK   &kp LCTRL  &kp LALT  &kp LGUI    &kp RCTRL   &kp INS               xxxxxx    xxxxxx      xxxxxx        xxxxxx         xxxxxx           xxxxxx
+        &kp ESC    xxxxxx         xxxxxx        xxxxxx        xxxxxx        xxxxxx        &to DVORAK   &kp LGUI   &kp LALT  &kp RCTRL   &kp RGUI    &kp INS               xxxxxx    xxxxxx      xxxxxx        xxxxxx         xxxxxx           xxxxxx
         &kp LSHFT  xxxxxx         xxxxxx        xxxxxx        xxxxxx        xxxxxx                                &kp HOME  &kp PG_UP                                     xxxxxx    xxxxxx      xxxxxx        xxxxxx         xxxxxx           &kp RSHFT
         &mo FN     xxxxxx         &kp CAPS      &kp LEFT      &kp RIGHT                   &kp BSPC     &kp DEL    &kp END   &kp PG_DN   &kp ENTER   &kp SPACE                       &kp UP      &kp DOWN      xxxxxx         xxxxxx           &mo FN
       >;
