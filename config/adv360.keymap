@@ -9,12 +9,11 @@
 #define xxxxxx &none
 
 // Define Layout Names
-#define GLOBAL 0
-#define QWERTY 1
-#define DVORAK 2
-#define KEYPAD 3
-#define FN 4
-#define MOD 5
+#define QWERTY 0
+#define DVORAK 1
+#define KEYPAD 2
+#define FN 3
+#define MOD 4
 
 // Define Key Positions
 #define KEYS_LEFT 0 1 2 3 4 5 6 \
@@ -205,22 +204,13 @@
   keymap {
     compatible = "zmk,keymap";
 
-    global {
-      bindings = <
-        xxxxxx     xxxxxx         xxxxxx        xxxxxx        xxxxxx        xxxxxx        &tog KEYPAD                                               &mo MOD               xxxxxx    xxxxxx      xxxxxx        xxxxxx         xxxxxx           xxxxxx
-        &kp TAB    xxxxxx         xxxxxx        xxxxxx        xxxxxx        xxxxxx        &to QWERTY                                                &kp PSCRN             xxxxxx    xxxxxx      xxxxxx        xxxxxx         xxxxxx           xxxxxx
-        &kp ESC    xxxxxx         xxxxxx        xxxxxx        xxxxxx        xxxxxx        &to DVORAK   &kp LGUI   &kp LALT  &kp RCTRL   &kp RGUI    &kp INS               xxxxxx    xxxxxx      xxxxxx        xxxxxx         xxxxxx           xxxxxx
-        &kp LSHFT  xxxxxx         xxxxxx        xxxxxx        xxxxxx        xxxxxx                                &kp HOME  &kp PG_UP                                     xxxxxx    xxxxxx      xxxxxx        xxxxxx         xxxxxx           &kp RSHFT
-        &mo FN     xxxxxx         &kp CAPS      &kp LEFT      &kp RIGHT                   &kp BSPC     &kp DEL    &kp END   &kp PG_DN   &kp ENTER   &kp SPACE                       &kp UP      &kp DOWN      xxxxxx         xxxxxx           &mo FN
-      >;
-    };
     qwerty {
       bindings = <
-        &kp EQUAL  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5         ______                                                    ______                &kp N6    &kp N7      &kp N8        &kp N9         &kp N0           &kp MINUS
-        ______     &kp Q          &kp W         &kp E         &kp R         &kp T         ______                                                    ______                &kp Y     &kp U       &kp I         &kp O          &kp P            &kp BSLH
-        ______     A_CTRL         S_OPT         D_CMD         F_SHFT        &kp G         ______       ______     ______    ______      ______      ______                &kp H     J_SHFT      K_CMD         L_OPT          SEMI_CTRL        &kp SQT
-        ______     &kp Z          &kp X         &kp C         &kp V         &kp B                                 ______    ______                                        &kp N     &kp M       &kp COMMA     &kp DOT        &kp FSLH         ______
-        ______     &kp GRAVE      ______        ______        ______                      ______       ______     ______    ______      ______      ______                          ______      ______        &kp LBKT       &kp RBKT         ______
+        &pgrave    &pkp_n1        &lkp_n2       &lkp_n3       &lkp_n4       &akp_n5       &tog KEYPAD                                               &mo MOD               &ekp_n6   &rkp_n7     &rkp_n8       &rkp_n9        &skp_n0          &eprcnt
+        &kp TAB    &kp Q          &kp W         &kp E         &kp R         &kp T         &to QWERTY                                                &kp PSCRN             &kp Y     &kp U       &kp I         &kp O          &kp P            &bhash
+        &kp ESC    A_CTRL         S_OPT         D_CMD         F_SHFT        &kp G         &to DVORAK   &kp LGUI   &kp LALT  &kp RCTRL   &kp RGUI    &kp INS               &kp H     J_SHFT      K_CMD         L_OPT          SEMI_CTRL        &kp MINUS
+        &kp LSHFT  &kp Z          &kp X         &kp C         &kp V         &kp B                                 &kp HOME  &kp PG_UP                                     &kp N     &kp M       &kp COMMA     &kp DOT        &kp FSLH         &kp RSHFT
+        &mo FN     &dtilde        &kp CAPS      &kp LEFT      &kp RIGHT                   &kp BSPC     &kp DEL    &kp END   &kp PG_DN   &kp ENTER   &kp SPACE                       &kp UP      &kp DOWN      &kp SQT        &acaret          &mo FN
       >;
     };
     dvorak {
